@@ -1,0 +1,22 @@
+{
+  "name": "Ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 : Dynamisez une page Web avec des animations CSS.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/styls.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chantalak/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chantalak/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Chantalak/Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
