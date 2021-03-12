@@ -1,10 +1,11 @@
 {
-  "name": "Ohmyfood",
+  "name": "q",
   "version": "1.0.0",
   "description": "Projet 3 : Dynamisez une page Web avec des animations CSS.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/styls.css"
+    "sass": "sass --watch ./sass/main.scss:.public/css/styls.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Chantalak/Ohmyfood/issues"
   },
