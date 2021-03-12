@@ -4,7 +4,7 @@
   "description": "Projet 3 : Dynamisez une page Web avec des animations CSS.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/styls.css",
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
