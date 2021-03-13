@@ -21,4 +21,10 @@ button {
   font-size: 1rem;
 }
 
+footer {
+  background-color: #353535;
+  color: #fff;
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */
