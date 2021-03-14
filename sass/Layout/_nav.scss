@@ -1,0 +1,30 @@
+.nav{
+    @include center;
+
+    &__list{
+        display: flex;
+    }
+
+    &__btn{
+       position: absolute;
+        border-radius: 50%;
+        height: 5%;
+        border: 0.5px solid $color-primary;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    .nav__box{
+        display: inline-flex;
+        background-color: $background-color;
+        border: none;
+        padding: 19px;
+        margin: 10px;
+        border-radius: 19px; 
+    
+        &--text{
+            margin: 0%;
+        }
+    }
+}
+    

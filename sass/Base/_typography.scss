@@ -1,0 +1,23 @@
+header{
+    @include center
+}
+
+h1{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: $color-black;
+}
+
+li{
+    list-style-type: none;
+}
+
+footer{
+    background-color: $color-footer;
+    color: $color-white;
+    list-style: none;
+}

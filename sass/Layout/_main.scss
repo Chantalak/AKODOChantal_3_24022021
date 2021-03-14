@@ -1,0 +1,29 @@
+.container{
+   
+    .location{
+    @include center;
+    background-color: $background-clr;
+    box-shadow: 10px 5px 5px $background-color;
+    }
+
+    .heading{
+        padding: 50px;
+        text-align: center;
+        background-color: $background-color;
+
+        &__title{
+            margin-top: 0%;
+        }
+
+        &__btn{
+            background-color: $color-primary;
+            color: $color-white;
+            border: 0.5px solid #F2F2F2;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+    }
+}
+
+
