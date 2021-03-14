@@ -13,22 +13,23 @@
 	<body>
 		<!--entête-->
 		<header class="header">
-			<img class="header__logo" src=".public/img/logo/ohmyfood.svg" alt="logo du site">
+			<p class="header__logo"><img src=".public/img/logo/ohmyfood.svg" alt="logo du site"></p>
 		</header>
 
 		<!--main-->
 		<main class="container">
+		
 			<div class="location">
 				<i class="fas fa-map-marker-alt"></i>
-				<span class="location__text">Paris, Belleville</span>
+				<p class="location__text">Paris, Belleville</p>
 			</div>
-
+			
 			<div class="heading">
 				<h1 class="heading__title">Réservez le menu qui vous convient</h1>
 				<p class="heading__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 				<button class="heading__btn">Explorer nos restaurants</button>
 			</div>
-
+			
 			<nav class="nav">
 				<h2 class="nav__title">Fonctionnement</h2>
 				<ul class="nav__list">
@@ -65,49 +66,51 @@
 			<section class="restaurants">
 				<h2 class="restaurants__title">Restaurants</h2>
 
-				<a class="restaurants__1" href="./menu/1_lapalettedugout.html">
-					<figure class="restaurants__images">
-						<img src=".public/img/restaurants/1.jpg" alt="plat restaurant">
-						<figcaption>
-							<h3>La palette du goût</h3>
-							<p>Ménilmontant</p>
-							<i class="far fa-heart"></i>
-						</figcaption>
-					</figure>
-				</a>
+				<div class="restaurants__menu">
+					<a class="restaurants__link" href="./menu/1_lapalettedugout.html">
+						<figure class="restaurants__images">
+							<img src=".public/img/restaurants/1.jpg" alt="plat restaurant">
+							<figcaption>
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+								<i class="far fa-heart"></i>
+							</figcaption>
+						</figure>
+					</a>
 
-				<a class="restaurants__2" href="./menu/3_lanoteenchantee.html">
-					<figure class="restaurants__images">
-						<img src=".public/img/restaurants/2.jpg" alt="plat restaurant">
-						<figcaption class="restaurants__legend">
-							<h3>La note enchantée</h3>
-							<p>Charonne</p>
-							<i class="far fa-heart"></i>
-						</figcaption>
-					</figure>
-				</a>
+					<a class="restaurants__link" href="./menu/3_lanoteenchantee.html">
+						<figure class="restaurants__images">
+							<img src=".public/img/restaurants/2.jpg" alt="plat restaurant">
+							<figcaption class="restaurants__legend">
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+								<i class="far fa-heart"></i>
+							</figcaption>
+						</figure>
+					</a>
 
-				<a class="restaurants__3" href="./menu/4_alafrancaise.html">
-					<figure class="restaurants__images">
-						<img src=".public/img/restaurants/3.jpg" alt="plat restaurant">
-						<figcaption class="restaurants__legend">
-							<h3>A la française</h3>
-							<p>Cité Rouge</p>
-							<i class="far fa-heart"></i>
-						</figcaption>
-					</figure>
-				</a>
+					<a class="restaurants__link" href="./menu/4_alafrancaise.html">
+						<figure class="restaurants__images">
+							<img src=".public/img/restaurants/3.jpg" alt="plat restaurant">
+							<figcaption class="restaurants__legend">
+								<h3>A la française</h3>
+								<p>Cité Rouge</p>
+								<i class="far fa-heart"></i>
+							</figcaption>
+						</figure>
+					</a>
 
-				<a class="restaurants__4" href="./menu/2_ledelicedessens.html">
-					<figure class="restaurants__images">
-						<img src=".public/img/restaurants/4.jpg" alt="plat restaurant">
-						<figcaption class="restaurants__legend">
-							<h3>La délice des sens</h3>
-							<p>Folie-Méricourt</p>
-							<i class="far fa-heart"></i>
-						</figcaption>
-					</figure>
-				</a>
+					<a class="restaurants__link" href="./menu/2_ledelicedessens.html">
+						<figure class="restaurants__images">
+							<img src=".public/img/restaurants/4.jpg" alt="plat restaurant">
+							<figcaption class="restaurants__legend">
+								<h3>La délice des sens</h3>
+								<p>Folie-Méricourt</p>
+								<i class="far fa-heart"></i>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
 			</section>
 
 		</main>

@@ -1,6 +1,12 @@
 .nav{
+    @include center;
+
+    &__list{
+        display: flex;
+    }
+
     &__btn{
-        position: absolute;
+       position: absolute;
         border-radius: 50%;
         height: 5%;
         border: 0.5px solid $color-primary;

@@ -1,0 +1,26 @@
+.restaurants{
+
+    &__menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    &__link{
+        @media (min-width:599px) {
+            width: 50%;
+        }
+    }
+     
+    &__images{
+
+        img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        }
+    }
+
+
+}
+
