@@ -14,90 +14,95 @@
 	<body>
 		<!--entête-->
 		<header class="header">
-			<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+			<a class="header__link" href="../index.html">
+				<i class="fas fa-arrow-left"></i>
+			</a>
 			<img class="header__logo" src="../.public/img/logo/ohmyfood.svg"  alt="logo du site">
 		</header>
 
 		<!--main-->
-		<main class="container">
-			<img class="container__img" src="../.public/img/restaurants/4.jpg" alt="plat du restaurant Le délice des sens">
+		<main class="menu">
+			<img class="menu__img" src="../.public/img/restaurants/4.jpg" alt="plat du restaurant Le délice des sens">
 
 			<div class="head">
 				<h1 class="head__title">Le délice des sens </h1>
 				<i class="far fa-heart"></i>
 			</div>	
 
-			<section class="starter">
-				<h2 class="starter__title">Entrées</h2>
-				
-				<div class="starter__list">
-					<div class="starter__option">
-						<h3 class="starter__menu--title">Tartare de thon</h3>
-						<p class="starter__menu--description">Assaisonné au yuzu</p>
-						<p class="starter__menu--price">25€</p>	
+			<div class="container">
+				<section class="starter">
+					<h2 class="starter__title">Entrées</h2>
+					
+					<div class="starter__list">
+						<div class="starter__menu">
+							<h3 class="starter__menu--title">Tartare de thon</h3>
+							<p class="starter__menu--description">Assaisonné au yuzu</p>
+							<p class="starter__menu--price">25€</p>	
+						</div>
+						<div class="starter__menu">
+							<h3 class="starter__menu--title">Bouchée de homard croustillant </h3>
+							<p class="starter__menu--description">Et sa farandole de petits légumes</p>
+							<p class="starter__menu--price">35€</p>	
+						</div>
+						<div class="starter__menu">
+							<h3 class="starter__menu--title">Velouté de cèpes </h3>
+							<p class="starter__menu--description">Aux truffes</p>
+							<p class="starter__menu--price">20€</p>	
+						</div>
 					</div>
-					<div class="starter__option">
-						<h3 class="starter__menu--title">Bouchée de homard croustillant </h3>
-						<p class="starter__menu--description">Et sa farandole de petits légumes</p>
-						<p class="starter__menu--price">35€</p>	
-					</div>
-					<div class="starter__option">
-						<h3 class="starter__menu--title">Velouté de cèpes </h3>
-						<p class="starter__menu--description">Aux truffes</p>
-						<p class="starter__menu--price">20€</p>	
-					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="dish">
-				<h2 class="dish__title">Plats</h2>
+				<section class="dish">
+					<h2 class="dish__title">Plats</h2>
 
-				<div class="dish__list">
-					<div class="dish__option">
-						<h3 class="dish__menu--title">Poulet rôti aux herbes de Provence </h3>
-						<p class="dish__menu--description">Et sa crème de truffe</p>
-						<p class="dish__menu--price">40€</p>
+					<div class="dish__list">
+						<div class="dish__menu">
+							<h3 class="dish__menu--title">Poulet rôti aux herbes de Provence </h3>
+							<p class="dish__menu--description">Et sa crème de truffe</p>
+							<p class="dish__menu--price">40€</p>
+						</div>
+						<div class="dish__menu">
+							<h3 class="dish__menu--title">Langoustine rôtie </h3>
+							<p class="dish__menu--description">Et ses légumes de saison</p>
+							<p class="dish__menu--price">35€</p>
+						</div>
+						<div class="dish__menu">
+							<h3 class="dish__menu--title">Côte de boeuf Angus </h3>
+							<p class="dish__menu--description">Et sa purée de panais</p>
+							<p class="dish__menu--price">44€</p>
+						</div>
 					</div>
-					<div class="dish__option">
-						<h3 class="dish__menu--title">Langoustine rôtie </h3>
-						<p class="dish__menu--description">Et ses légumes de saison</p>
-						<p class="dish__menu--price">35€</p>
-					</div>
-					<div class="dish__option">
-						<h3 class="dish__menu--title">Côte de boeuf Angus </h3>
-						<p class="dish__menu--description">Et sa purée de panais</p>
-						<p class="dish__menu--price">44€</p>
-					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="dessert">
-				<h2 class="dessert__title">Desserts</h2>
+				<section class="dessert">
+					<h2 class="dessert__title">Desserts</h2>
 
-				<div class="dessert__list">
-					<div class="dessert__option">
-						<h3 class="dessert__menu--title">Farandole de desserts</h3>
-						<p class="dessert__menu--description">Du chef</p>
-						<p class="dessert__menu--price">18€</p>
+					<div class="dessert__list">
+						<div class="dessert__menu">
+							<h3 class="dessert__menu--title">Farandole de desserts</h3>
+							<p class="dessert__menu--description">Du chef</p>
+							<p class="dessert__menu--price">18€</p>
+						</div>
+						<div class="dessert__menu">
+							<h3 class="dessert__menu--title">Crème brulée </h3>
+							<p class="dessert__menu--description">Revisitée</p>
+							<p class="dessert__menu--price">22€</p>
+						</div>
+						<div class="dessert__menu">
+							<h3 class="dessert__menu--title">Tiramisu </h3>
+							<p class="dessert__menu--description">À la noisette</p>
+							<p class="dessert__menu--price">23€</p>
+						</div>
 					</div>
-					<div class="dessert__option">
-						<h3 class="dessert__menu--title">Crème brulée </h3>
-						<p class="dessert__menu--description">Revisitée</p>
-						<p class="dessert__menu--price">22€</p>
-					</div>
-					<div class="dessert__option">
-						<h3 class="dessert__menu--title">Tiramisu </h3>
-						<p class="dessert__menu--description">À la noisette</p>
-						<p class="dessert__menu--price">23€</p>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</main>
 	
 		<!--footer-->
 		<footer>
-			<img  class="footer__image" src="../.public/img/logo/ohmyfood.svg" alt="logo du site">
+		
 			<ul class="footer__list">	
+				<li>	<img  class="footer__image" src="../.public/img/logo/ohmyfood.svg" alt="logo du site"></li>
 				<li class="footer__icone">
 					<i class="fas fa-utensils"></i> Proposer un restaurant
 				</li>

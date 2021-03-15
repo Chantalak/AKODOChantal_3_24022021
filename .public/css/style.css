@@ -29,6 +29,20 @@ footer {
   list-style: none;
 }
 
+.footer__title {
+  margin-top: 0%;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5rem;
+}
+.footer__list {
+  padding: 40px 40px 40px 40px;
+  line-height: 2rem;
+  margin: 0%;
+}
+.footer__contact {
+  color: #fff;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -80,24 +94,176 @@ footer {
   padding: 15px;
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants__title {
+  padding-left: 40px;
+}
 .restaurants__menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.restaurants__link {
+  border-radius: 30px;
 }
 @media (min-width: 599px) {
   .restaurants__link {
     width: 50%;
   }
 }
+.restaurants__legend {
+  background-color: #fff;
+  position: relative;
+  padding-left: 10px;
+  height: 75px;
+}
+.restaurants__legend--title {
+  margin: 0px;
+}
+.restaurants__legend--description {
+  margin: 0px;
+}
+.restaurants__legend--heart {
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
 .restaurants__images img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
 }
 
-.container .starter {
-  border: 1px solid red;
+.header {
+  height: 70px;
+}
+.header__link {
+  position: absolute;
+  left: 20px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+}
+.menu__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.menu .head {
+  border-radius: 30px;
+}
+.menu .container {
+  position: relative;
+  border-radius: 30px 0px;
+  padding: 0px 40px 0px 40px;
+}
+@media (min-width: 992px) {
+  .menu .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+}
+@media (min-width: 992px) {
+  .menu .container .starter {
+    width: 30%;
+  }
+}
+.menu .container .starter__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.menu .container .starter__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 75px;
+  margin-top: 20px;
+}
+.menu .container .starter__menu--title {
+  margin: 0px;
+}
+.menu .container .starter__menu--description {
+  margin: 0px;
+}
+.menu .container .starter__menu--price {
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+@media (min-width: 992px) {
+  .menu .container .dish {
+    width: 30%;
+  }
+}
+.menu .container .dish__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.menu .container .dish__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 75px;
+  margin-top: 20px;
+}
+.menu .container .dish__menu--title {
+  margin: 0px;
+}
+.menu .container .dish__menu--description {
+  margin: 0px;
+}
+.menu .container .dish__menu--price {
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+@media (min-width: 992px) {
+  .menu .container .dessert {
+    width: 30%;
+  }
+}
+.menu .container .dessert__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.menu .container .dessert__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 75px;
+  margin-top: 20px;
+}
+.menu .container .dessert__menu--title {
+  margin: 0px;
+}
+.menu .container .dessert__menu--description {
+  margin: 0px;
+}
+.menu .container .dessert__menu--price {
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
