@@ -2,6 +2,11 @@ header{
     @include center
 }
 
+#bloc_page{
+    width: 100%;
+    max-width: 1920px;
+}
+
 h1{
     text-align: center;
 }

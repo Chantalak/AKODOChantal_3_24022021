@@ -1,9 +1,13 @@
 .container{
-   
     .location{
-    @include center;
-    background-color: $background-clr;
-    box-shadow: 10px 5px 5px $background-color;
+        @include center;
+        background-color: $background-clr;
+        box-shadow: 10px 5px 5px $background-color;
+
+        &__text{
+            font-weight: bold;
+            padding-left: 10px;
+        }
     }
 
     .heading{
@@ -24,5 +28,4 @@
         }
     }
 }
-
 
