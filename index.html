@@ -12,7 +12,6 @@
 
 	<body>
 		<div id="bloc_page">
-
 			<!--entête-->
 			<header class="header">
 				<p class="header__logo"><img src="public/img/logo/ohmyfood.svg" alt="logo du site"></p>
@@ -20,50 +19,54 @@
 
 			<!--main-->
 			<main class="container">
-			
-				<div class="location">
-					<i class="fas fa-map-marker-alt"></i>
-					<p class="location__text">Paris, Belleville</p>
-				</div>
-				
-				<div class="heading">
-					<h1 class="heading__title">Réservez le menu qui vous convient</h1>
-					<p class="heading__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-					<button class="heading__btn">Explorer nos restaurants</button>
-				</div>
-				
-				<nav class="nav">
-					<h2 class="nav__title">Fonctionnement</h2>
-					<ul class="nav__list">
-						<li class="nav__li">
-							<button class="nav__btn">1</button>
+				<header class="container_header">
+					<div class="location">
+						<i class="fas fa-map-marker-alt"></i>
+						<p class="location__text">Paris, Belleville</p>
+					</div>
+					
+					<div class="heading">
+						<h1 class="heading__title">Réservez le menu qui vous convient</h1>
+						<p class="heading__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+						<button  class="heading__btn">Explorer nos restaurants</button>
+					</div>
+					
+					<nav class="nav">
+						<h2 class="nav__title">Fonctionnement</h2>
+
+						<ul class="nav__list">
+							<li class="nav__li">
+								<button class="nav__btn">1</button>
+								<a href="#" class="nav__link">
+									<div class= nav__box>
+										<i class="fas fa-mobile-alt"></i>
+										<p class="nav__box--text">Choisissez un restaurant</p>
+									</div>
+								</a>	
+							</li>
+						
+							<li class="nav__li">
+								<button class="nav__btn">2</button>
+								<a href="#" class="nav__link">
+									<div class= nav__box>
+										<i class="fas fa-list-ul"></i>
+										<p class="nav__box--text">Composez votre menu</p>
+									</div>	
+								</a>
+							</li>
 							
-							<div class= nav__box>
-								<a href="#" class="nav__link"><i class="fas fa-mobile-alt"></i></a>
-								<p class="nav__box--text">Choisissez un restaurant</p>
-							</div>
-							
-						</li>
-						<li class="nav__li">
-							<button class="nav__btn">2</button>
-							
-							<div class= nav__box>
-								<a href="#" class="nav__link"><i class="fas fa-list-ul"></i></a>
-								<p class="nav__box--text">Composez votre menu</p>
-							</div>	
-							
-						</li>
-						<li class="nav__li">
-							<button class="nav__btn">3</button>
-							
-							<div class= nav__box> 
-								<a href="#" class="nav__link"><i class="fas fa-store"></i></a>
-								<p class="nav__box--text">Dégustez au restaurant</p>
-							</div>
-							
-						</li>
-					</ul>
-				</nav>
+							<li class="nav__li">
+								<button class="nav__btn">3</button>	
+								<a href="#" class="nav__link">
+									<div class= nav__box> 
+										<i class="fas fa-store"></i>
+										<p class="nav__box--text">Dégustez au restaurant</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
 
 				<section class="restaurants">
 					<h2 class="restaurants__title">Restaurants</h2>

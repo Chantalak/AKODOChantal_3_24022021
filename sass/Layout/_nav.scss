@@ -1,41 +1,76 @@
 .nav{
-    @include center;
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+    @media (min-width:599px) {
+        justify-content: center;
+    }
+
+    &__title{
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+    }
 
     &__list{
         display: flex;
         flex-wrap: wrap;
+        
+        @media (max-width:599px) {
+            margin-top: 0%;
+        }   
     }
 
     &__li {
         position: relative;
+        
+        @media (max-width:599px) {
+            width: 100%;
+        } 
     }
 
     &__btn{
         position: absolute;
-        top: 30px;
+        top: 36px;
+        font-size: 1rem;
         border-radius: 50%;
         border: 0.5px solid $color-primary;
         background-color: $color-primary;
         color: $color-white;
     }
 
-    a:hover{
-        color: $color-primary;
-    }
-
-    .nav__box{
+    &__box{
         display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
         background-color: $background-color;
-        border: none;
-        padding: 22px;
+        box-shadow: 0px 5px 10px 0px #c6c6c6;
+        padding: 25px;
         margin: 10px;
         border-radius: 15px; 
+        font-weight: bold;
+        font-size: 1.1rem;
+
+        &:hover{
+            background-color: #f5edff;
+            i{
+                color: $color-primary;
+            }
+        }
+
+        @media (max-width:599px) {
+            width: 70%;
+        }
+
+        i{
+            font-size: 24px;
+            color: #7e7e7e;
+        }
 
         &--text{
             margin: 0%;
-            padding-left: 5px;
+            padding-left: 20px;
         }
     }
 }
-    
