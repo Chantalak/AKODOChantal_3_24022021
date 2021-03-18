@@ -18,6 +18,10 @@
     height: 300px;
     background-color: $background-color;
 
+    @media (min-width:599px){
+        height: 230px;
+    }
+
     &__title{
         margin: 0%;
     }

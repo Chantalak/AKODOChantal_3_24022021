@@ -1,8 +1,9 @@
 .restaurants{
     background-color: $background-color;
+    padding: 50px 0px 50px 0px;
 
     &__title{
-        padding: 40px 0px 20px 40px;
+        padding-left: 40px;
         margin: 0px;
     }
 
@@ -17,11 +18,15 @@
         @media (min-width:599px) {
             width: 50%;
         }
+        @media (min-width:992px) {
+            width: 25%;
+        }
     }
 
      &__images{
         background-color: $color-white;
         border-radius: 30px;
+        margin: 20px 20px 0px 20px;
 
         img{
             @include images;
