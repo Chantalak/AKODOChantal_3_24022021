@@ -71,6 +71,7 @@ footer {
 @media (max-width: 599px) {
   .nav__list {
     margin-top: 0%;
+    padding-left: 20px;
   }
 }
 .nav__li {
@@ -92,20 +93,20 @@ footer {
 }
 .nav__box {
   display: inline-flex;
-  justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
   background-color: #f6f6f6;
   box-shadow: 0px 5px 10px 0px #c6c6c6;
-  padding: 25px;
+  padding: 25px 25px 25px 45px;
   margin: 10px;
   border-radius: 15px;
   font-weight: bold;
-  font-size: 1.1rem;
 }
 .nav__box:hover {
   background-color: #f5edff;
+  box-shadow: 5px 10px 10px 0px #c6c6c6;
 }
-.nav__box:hover i {
+.nav__box:hover .fas {
   color: #9356DC;
 }
 @media (max-width: 599px) {
@@ -159,10 +160,15 @@ footer {
   color: #fff;
   outline-style: none;
   border: none;
+  cursor: pointer;
   border-radius: 20px;
   padding: 15px;
   background: linear-gradient(334deg, #9356DC, #FF79DA);
   box-shadow: 0px 5px 10px 0px #c6c6c6;
+}
+.heading__btn:hover {
+  background-color: white;
+  box-shadow: 5px 10px 10px 0px #c6c6c6;
 }
 
 .restaurants {
