@@ -74,3 +74,17 @@
     }
 
 }
+
+@mixin order {
+    background: $color-primary;
+    color: $color-white;
+    outline-style: none;
+    
+    font-size: 1rem;
+    max-width: 35%;
+    margin: 20px;
+
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+}

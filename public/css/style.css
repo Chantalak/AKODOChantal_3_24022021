@@ -1,3 +1,19 @@
+.fa-heart {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
+  transition: all 1000ms;
+}
+.fa-heart:hover {
+  color: #fff;
+  background: #d6249f;
+  background: linear-gradient(334deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0px;
+}
+
 body {
   font-family: "Roboto", "Shrikhand", serif, sans-serif;
   box-sizing: border-box;
@@ -373,6 +389,23 @@ footer {
   position: absolute;
   top: 30px;
   right: 10px;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order__btn {
+  background: #9356DC;
+  color: #fff;
+  outline-style: none;
+  font-size: 1rem;
+  max-width: 35%;
+  margin: 20px;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
