@@ -13,7 +13,7 @@
 	<body>
 		<div id="bloc_page">
 			<!--loading spinner-->
-			<span><i class="fas fa-spinner"></i></span>
+			<div><i class="fas fa-spinner spinner"></i></div>
 
 			<!--entête-->
 			<header class="header">
@@ -31,7 +31,7 @@
 					<div class="heading">
 						<h1 class="heading__title">Réservez le menu qui vous convient</h1>
 						<p class="heading__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-						<button class="heading__btn">Explorer nos restaurants</button>
+						<button class="heading__btn"><a href="#ancre">Explorer nos restaurants</a></button>
 					</div>
 					
 					<nav class="nav">
@@ -71,7 +71,7 @@
 					</nav>
 				</header>
 
-				<section class="restaurants">
+				<section id="ancre" class="restaurants">
 					<h2 class="restaurants__title">Restaurants</h2>
 
 					<div class="restaurants__menu">
@@ -86,7 +86,7 @@
 									</figcaption>
 								</figure>
 							</a>
-							<button class="restaurants__btn">Nouveau</button>
+							<button class="restaurants__btn restaurants__btn--actif">Nouveau</button>
 						</div>
 
 						<div class="restaurants__container">
@@ -100,7 +100,7 @@
 									</figcaption>
 								</figure>
 							</a>
-							<button class="restaurants__btn">Nouveau</button>
+							<button class="restaurants__btn restaurants__btn--actif">Nouveau</button>
 						</div>
 
 						<div class="restaurants__container">
