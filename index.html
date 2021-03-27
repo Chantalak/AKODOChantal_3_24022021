@@ -12,6 +12,9 @@
 
 	<body>
 		<div id="bloc_page">
+			<!--loading spinner-->
+			<div class="loading"><i class="fas fa-spinner spinner"></i></div>
+
 			<!--entête-->
 			<header class="header">
 				<p class="header__logo"><img src="public/img/logo/ohmyfood.svg" alt="logo du site"></p>
@@ -28,7 +31,7 @@
 					<div class="heading">
 						<h1 class="heading__title">Réservez le menu qui vous convient</h1>
 						<p class="heading__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-						<button class="heading__btn">Explorer nos restaurants</button>
+						<a href="#ancre"></a><button class="heading__btn">Explorer nos restaurants</button></a>
 					</div>
 					
 					<nav class="nav">
@@ -68,53 +71,65 @@
 					</nav>
 				</header>
 
-				<section class="restaurants">
+				<section id="ancre" class="restaurants">
 					<h2 class="restaurants__title">Restaurants</h2>
 
 					<div class="restaurants__menu">
-						<a class="restaurants__link" href="./menu/1_lapalettedugout.html">
-							<figure class="restaurants__images">
-								<img src="public/img/restaurants/1.jpg" alt="plat restaurant">
-								<figcaption class="restaurants__legend">
-									<h3 class="restaurants__legend--title">La palette du goût</h3>
-									<p class="restaurants__legend--description">Ménilmontant</p>
-									<span class="restaurants__legend--heart"><i class="far fa-heart"></i></span>
-								</figcaption>
-							</figure>
-						</a>
+						<div class="restaurants__container">
+							<a class="restaurants__link" href="./menu/1_lapalettedugout.html">
+								<figure class="restaurants__images">
+									<img src="public/img/restaurants/1.jpg" alt="plat restaurant">
+									<figcaption class="restaurants__legend">
+										<h3 class="restaurants__legend--title">La palette du goût</h3>
+										<p class="restaurants__legend--description">Ménilmontant</p>
+										<span class="restaurants__legend--heart"><i class="fas fa-heart heart"></i></span>
+									</figcaption>
+								</figure>
+							</a>
+							<button class="restaurants__btn restaurants__btn--actif">Nouveau</button>
+						</div>
 
-						<a class="restaurants__link" href="./menu/3_lanoteenchantee.html">
-							<figure class="restaurants__images">
-								<img src="public/img/restaurants/2.jpg" alt="plat restaurant">
-								<figcaption class="restaurants__legend">
-									<h3 class="restaurants__legend--title">La note enchantée</h3>
-									<p class="restaurants__legend--description">Charonne</p>
-									<span class="restaurants__legend--heart"><i class="far fa-heart"></i></span>
-								</figcaption>
-							</figure>
-						</a>
+						<div class="restaurants__container">
+							<a class="restaurants__link" href="./menu/3_lanoteenchantee.html">	
+								<figure class="restaurants__images">
+									<img src="public/img/restaurants/2.jpg" alt="plat restaurant">
+									<figcaption class="restaurants__legend">
+										<h3 class="restaurants__legend--title">La note enchantée</h3>
+										<p class="restaurants__legend--description">Charonne</p>
+										<span class="restaurants__legend--heart"><i class="fas fa-heart heart"></i></span>
+									</figcaption>
+								</figure>
+							</a>
+							<button class="restaurants__btn restaurants__btn--actif">Nouveau</button>
+						</div>
 
-						<a class="restaurants__link" href="./menu/4_alafrancaise.html">
-							<figure class="restaurants__images">
-								<img src="public/img/restaurants/3.jpg" alt="plat restaurant">
-								<figcaption class="restaurants__legend">
-									<h3 class="restaurants__legend--title">A la française</h3>
-									<p class="restaurants__legend--description">Cité Rouge</p>
-									<span class="restaurants__legend--heart"><i class="far fa-heart"></i></span>
-								</figcaption>
-							</figure>
-						</a>
+						<div class="restaurants__container">
+							<a class="restaurants__link" href="./menu/4_alafrancaise.html">
+								<figure class="restaurants__images">
+									<img src="public/img/restaurants/3.jpg" alt="plat restaurant">
+									<figcaption class="restaurants__legend">
+										<h3 class="restaurants__legend--title">A la française</h3>
+										<p class="restaurants__legend--description">Cité Rouge</p>
+										<span class="restaurants__legend--heart"><i class="fas fa-heart heart"></i></span>
+									</figcaption>
+								</figure>
+							</a>
+							<button class="restaurants__btn">Nouveau</button>
+						</div>
 
-						<a class="restaurants__link" href="./menu/2_ledelicedessens.html">
-							<figure class="restaurants__images">
-								<img src="public/img/restaurants/4.jpg" alt="plat restaurant">
-								<figcaption class="restaurants__legend">
-									<h3 class="restaurants__legend--title">La délice des sens</h3>
-									<p class="restaurants__legend--description">Folie-Méricourt</p>
-									<span class="restaurants__legend--heart"><i class="far fa-heart"></i></span>
-								</figcaption>
-							</figure>
-						</a>
+						<div class="restaurants__container">
+							<a class="restaurants__link" href="./menu/2_ledelicedessens.html">
+								<figure class="restaurants__images">
+									<img src="public/img/restaurants/4.jpg" alt="plat restaurant">
+									<figcaption class="restaurants__legend">
+										<h3 class="restaurants__legend--title">La délice des sens</h3>
+										<p class="restaurants__legend--description">Folie-Méricourt</p>
+										<span class="restaurants__legend--heart"><i class="fas fa-heart heart"></i></span>
+									</figcaption>
+								</figure>
+							</a>
+							<button class="restaurants__btn">Nouveau</button>
+						</div>
 					</div>
 				</section>
 
