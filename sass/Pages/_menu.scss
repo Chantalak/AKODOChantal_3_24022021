@@ -7,19 +7,24 @@
     }
 }
 
-.menu{
-    background-color: $background-color;
-
-    &__img{
+.menu__img{
+    margin-bottom: -40px;
+    
+    &--photo{
         @include images;
     }
+}
 
+.menu{
+    background-color: $background-color;
+    border-radius: 50px;
     .head{
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
-        border-radius: 30px;
+        border-radius: 20px;
+        z-index: 1;
 
         @media (min-width:599px){
             width: 400px;
