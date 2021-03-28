@@ -7,17 +7,19 @@
     }
 }
 
-.menu__img{
-    margin-bottom: -40px;
-    
+.banner__image{
+    margin-bottom: 250px;
     &--photo{
-        @include images;
+        position: absolute;
+        z-index: -1;
+        @include banner;
     }
 }
 
 .menu{
     background-color: $background-color;
-    border-radius: 50px;
+    border-radius: 50px 50px 0px 0px;
+
     .head{
         display: inline-flex;
         justify-content: space-between;
@@ -39,17 +41,14 @@
            font-size: 1.5rem;
         }
     }
-
-    
+ 
     .container{
-        position: relative;
-        border-radius: 30px 0px;
-        padding: 0px 15px 50px 15px;
-
+        @media(max-width:992px){
+            width: 100%;
+        }
         @media (min-width:992px) {
             display: flex;
             justify-content: space-evenly;
-            align-items: end;
         }   
 
         .starter{
@@ -64,6 +63,10 @@
             @include menu;
         }   
     }
+}
+
+.checkmark{
+    font-size: 1.5rem;
 }
 
 .order{
