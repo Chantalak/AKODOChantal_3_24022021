@@ -21,7 +21,7 @@
   font-size: 8rem;
   color: $color-primary;
   opacity: 0;
-  animation: spinner 2s linear 1;
+  animation: spinner 2s ease-out 1;
   }
 }
 

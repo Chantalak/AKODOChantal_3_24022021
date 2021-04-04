@@ -11,7 +11,7 @@
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
+    opacity: 0;
   }
 }
 .heart {
@@ -204,7 +204,7 @@ footer {
   font-size: 8rem;
   color: #9356DC;
   opacity: 0;
-  animation: spinner 2s linear 1;
+  animation: spinner 2s ease-out 1;
 }
 
 .heading {
