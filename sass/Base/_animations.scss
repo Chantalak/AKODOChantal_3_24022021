@@ -1,39 +1,18 @@
-.loading{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  animation: loading 3s ease-in;
-  
-  &__spinner{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(50%, 50%);
-  font-size: 10rem;
-  color: adjust-hue($color: $color-primary, $degrees: 100);
-  opacity: 0;
-  animation: spinner 1s ease-in-out 3;
-  }
-}
-
 @keyframes loading{
   from{
+    background-color: $color-secondary;
     z-index: 1;
-    background-color: $background-color;
   }
 }
 
 @keyframes spinner{
   0%{
-    z-index: 1;
     opacity: 1;
     transform: rotate(0);
-    
   }
   100%{
-    z-index: 1;
-    opacity: 1;
     transform: rotate(360deg);
+    opacity: 0;
   } 
 }
 
@@ -54,11 +33,24 @@
   }
 }
 
+.checkmark{
+  animation: spinner 1s infinite;
+}
+
 @keyframes progress {
   0% {
     transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes checkmark {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 15%;
   }
 }

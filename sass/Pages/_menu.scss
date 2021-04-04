@@ -56,21 +56,10 @@
             justify-content: space-evenly;
         }   
 
-        .starter{
+        .meal{
             @media (max-width:1270px){
                 margin-bottom: 10%;
             }
-            @include menu;
-        }
-
-        .dish{
-            @media (max-width:1270px){
-                margin-bottom: 10%;
-            }
-            @include menu;
-        }
-
-        .dessert{
             @include menu;
         }
         
