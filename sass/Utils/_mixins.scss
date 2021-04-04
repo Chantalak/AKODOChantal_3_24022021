@@ -57,13 +57,14 @@
         margin-top: 20px;
         height: 75px;
         overflow: hidden;
+        cursor: pointer;
 
         @media (min-width:1270px) {
             width: 400px;
         }  
 
         &:nth-child(1n){
-        animation: progress 1s ease-in;
+            animation: progress 1s ease-in;
         }
         &:nth-child(2n){
             animation: progress 2s ease-in;
@@ -73,31 +74,32 @@
         }
 
         &:hover > * {
-            transform: translateX(0px);
-            transition: transform 1000ms ease-in-out;
+            animation: checkmark 1000ms ease-in-out;
         }
 
         &--description{
-            width: 70%;
-            display: grid;
-            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
             text-overflow: ellipsis;
 
             *{
                 margin: 0%;
             }
+
+            &:hover{
+                min-width: 75%;
+            }
         }
 
         &--price{
-            
             font-weight: bold;
-            width: 15%;
+            width: 10%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             padding-bottom: 10px;
-       
-            transform: translateX(70px);
         }
 
         &--checkbox{
@@ -105,8 +107,7 @@
             color: $color-white;
             background-color: $color-tertiary;
             border-radius: 0px 20px 20px 0px;
-            width: 15%;
-            transform: translateX(70px);
+            width: 0%;
         }
     }
 
@@ -123,7 +124,7 @@
     font-size: 1.1rem;
     background: linear-gradient(334deg, $color-primary, $color-secondary);
     box-shadow: 0px 5px 10px 0px $box-color;
-    width: 235px;
+    //width: 235px;
     
     &:hover {
         background-color: white;

@@ -9,11 +9,25 @@
     }
 }
 
+.loading{
+  position: fixed;
+  @include center;
+  width: 100%;
+  height: 100%;
+  animation: loading 3s linear;
+  z-index: -1;
+
+  &__spinner{
+  font-size: 8rem;
+  color: $color-primary;
+  opacity: 0;
+  animation: spinner 2s linear 1;
+  }
+}
+
 .heading{
-    display: flex;
+    @include center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 300px;
     background-color: $background-color;
 
