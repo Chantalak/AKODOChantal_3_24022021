@@ -1,17 +1,15 @@
 @keyframes loading {
-  from {
-    background-color: #FF79DA;
-    z-index: 1;
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
 }
 @keyframes spinner {
   0% {
-    opacity: 1;
     transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 .heart {
@@ -193,14 +191,16 @@ footer {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loading 3s linear;
-  z-index: -1;
+  background-color: #FF79DA;
+  animation: loading 0.05s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  z-index: 10000;
 }
 .loading__spinner {
   font-size: 8rem;
   color: #9356DC;
-  opacity: 0;
-  animation: spinner 2s ease-out 1;
+  animation: spinner 1s ease 3;
 }
 
 .heading {
@@ -411,7 +411,7 @@ footer {
   animation: progress 3s ease-in;
 }
 .menu .container .meal__menu:hover > * {
-  animation: checkmark 1000ms ease-in-out;
+  animation: checkmark 1000ms ease-in-out forwards;
 }
 .menu .container .meal__menu--description {
   display: flex;
@@ -424,11 +424,11 @@ footer {
   margin: 0%;
 }
 .menu .container .meal__menu--description:hover {
-  min-width: 75%;
+  min-width: 70%;
 }
 .menu .container .meal__menu--price {
   font-weight: bold;
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: flex-end;

@@ -1,18 +1,16 @@
 @keyframes loading{
-  from{
-    background-color: $color-secondary;
-    z-index: 1;
+  100%{
+    opacity: 0;
+    z-index: -10;
   }
 }
 
 @keyframes spinner{
   0%{
-    opacity: 1;
     transform: rotate(0);
   }
   100%{
     transform: rotate(360deg);
-    opacity: 0;
   } 
 }
 

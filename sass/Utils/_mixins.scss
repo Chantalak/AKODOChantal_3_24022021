@@ -74,7 +74,7 @@
         }
 
         &:hover > * {
-            animation: checkmark 1000ms ease-in-out;
+            animation: checkmark 1000ms ease-in-out forwards;
         }
 
         &--description{
@@ -89,13 +89,13 @@
             }
 
             &:hover{
-                min-width: 75%;
+                min-width: 70%;
             }
         }
 
         &--price{
             font-weight: bold;
-            width: 10%;
+            width: 15%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -110,7 +110,6 @@
             width: 0%;
         }
     }
-
 }
 
 @mixin button {

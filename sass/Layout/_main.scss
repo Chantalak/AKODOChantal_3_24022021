@@ -10,19 +10,21 @@
 }
 
 .loading{
-  position: fixed;
-  @include center;
-  width: 100%;
-  height: 100%;
-  animation: loading 3s linear;
-  z-index: -1;
-
+    position: fixed;
+    @include center;
+    width: 100%;
+    height: 100%;
+    background-color: $color-secondary;
+    animation: loading 0.05s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    
   &__spinner{
-  font-size: 8rem;
-  color: $color-primary;
-  opacity: 0;
-  animation: spinner 2s ease-out 1;
-  }
+    font-size: 8rem;
+    color: $color-primary;
+    animation: spinner 1s ease 3;
+    }
 }
 
 .heading{
