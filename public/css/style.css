@@ -22,6 +22,7 @@
 .heart:hover {
   background: linear-gradient(334deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
 }
@@ -39,7 +40,7 @@
     width: 0%;
   }
   to {
-    width: 15%;
+    width: 20%;
   }
 }
 body {
@@ -386,7 +387,6 @@ footer {
 }
 .menu .container .meal__menu {
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
   box-shadow: 0px 5px 10px 0px #c6c6c6;
   border-radius: 20px;
@@ -410,7 +410,7 @@ footer {
 .menu .container .meal__menu:nth-child(3n) {
   animation: progress 3s ease-in;
 }
-.menu .container .meal__menu:hover > * {
+.menu .container .meal__menu:hover > .meal__menu--checkbox {
   animation: checkmark 1000ms ease-in-out forwards;
 }
 .menu .container .meal__menu--description {
@@ -418,13 +418,16 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .container .meal__menu--description * {
   margin: 0%;
 }
-.menu .container .meal__menu--description:hover {
-  min-width: 70%;
+.menu .container .meal__menu--description .description {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 .menu .container .meal__menu--price {
   font-weight: bold;
@@ -438,6 +441,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   color: #fff;
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
@@ -451,7 +455,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px 90px 0px;
+  padding: 50px 0px 70px 0px;
+}
+@media (max-width: 599px) {
+  .order {
+    padding: 0px 0px 70px 0px;
+  }
 }
 .order__btn {
   color: #fff;
