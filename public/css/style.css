@@ -413,6 +413,9 @@ footer {
 .menu .container .meal__menu:hover > .meal__menu--checkbox {
   animation: checkmark 1000ms ease-in-out forwards;
 }
+.menu .container .meal__menu:hover .checkmark {
+  transform: rotate(0deg);
+}
 .menu .container .meal__menu--description {
   display: flex;
   flex-direction: column;
@@ -424,6 +427,8 @@ footer {
 }
 .menu .container .meal__menu--description * {
   margin: 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .container .meal__menu--description .description {
   font-weight: 700;
@@ -447,8 +452,10 @@ footer {
   border-radius: 0px 20px 20px 0px;
   width: 0%;
 }
-.menu .container .checkmark {
-  font-size: 1.3em;
+.menu .container .meal__menu--checkbox .checkmark {
+  font-size: 1.5rem;
+  transform: rotate(180deg);
+  transition-duration: 0.8s;
 }
 
 .order {
