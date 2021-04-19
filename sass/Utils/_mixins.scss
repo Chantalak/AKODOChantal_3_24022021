@@ -75,7 +75,12 @@
 
         &:hover > .meal__menu--checkbox {
             animation: checkmark 1000ms ease-in-out forwards;
-        }   
+            
+        } 
+
+        &:hover .checkmark {
+            transform: rotate(0deg);
+        }                
 
         &--description{
             display: flex;
@@ -88,6 +93,8 @@
 
             *{
                 margin: 0%;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .description{
@@ -112,6 +119,12 @@
             background-color: $color-tertiary;
             border-radius: 0px 20px 20px 0px;
             width: 0%;
+
+            .checkmark{
+                font-size: 1.5rem;
+                transform: rotate(180deg);
+                transition-duration: 0.8s;
+            }
         }
     }
 }
